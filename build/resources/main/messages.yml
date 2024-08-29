@@ -1,0 +1,56 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                💻Resource Rush Messages💻
+#                                                  🔥Coded By Mike3132🔥
+#                                                💻Resource Rush Messages💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+#✍✍✍✍ This file handles all messages for the plugin including the prefix.✍✍✍✍
+#✍✍✍✍ You can change anything here to be whatever custom stuff you want.✍✍✍✍
+#☠☠☠☠ DO NOT CHANGE THE "Messages:" line as this will break the plugin.☠☠☠☠
+#☠☠☠☠ ALL messages must have single quotes '' as seen in this default config.☠☠☠☠
+
+#📝📝📝📝 Placeholders 📝📝📝📝
+
+
+
+#Plugin prefix is sent before ALL messages in the plugin.
+Messages:
+  #Plugin prefix for all messages.
+  Prefix: '&6Resource &eRush &7> '
+
+  #➳➳➳➳➳ Console Messages ➳➳➳➳➳
+  #Players only command
+  Player-Only: '&4ERROR: &cYou must be a player to use this command'
+
+  #➳➳➳➳➳ General Messages ➳➳➳➳➳
+  #No permission message
+  No-Permission: '&4ERROR: &cYou do not have permission to use this command'
+
+  #Not enough command arguments
+  Not-Enough-Args: "&4Error: &cYou have not supplied enough arguments for this command"
+
+  #➳➳➳➳➳ Player Messages ➳➳➳➳➳
+  #Sent to the player when they mine a block that has been placed by a player during a rush
+  #WARNING: This is only the message and if you would like for the block break to be stopped please set "Player-Placed-Block-Protection" to true in the config.yml
+  Player-Placed-Block-Warning: "&4ERROR: &cThis is a player placed block, You will not get extra resources for mining this"
+
+  #These are the messages that are sent to the player when they mine a block and get extra resources
+  #Sent to the player when they mine a block and get extra resources during a rush
+  Player-Extra-Resource-Chat-Message: "&2You have gotten extra resources for mining during a rush."
+  Player-Extra-Resource-Action-Bar-Message: "&2You have gotten extra resources for mining during a rush."
+
+
+  #➳➳➳➳➳ Admin Messages ➳➳➳➳➳
+  #Sent when an admin force starts rushes
+  Admin-Force-Start-Rush: "&6All previous rushes have been stopped and new ones have been force started"
+
+  #Sent when an admin force stops rushes
+  Admin-Force-Stop-Rush: "&eAll previous rushes have been stopped"
+
+
+  #See config.yml for permissions, and other plugin configurations
+  #♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+  #♏ https://discord.gg/ePQGvQuzG3
+  #♏ Thanks for downloading and have a wonderful day
+  #♛♛♛♛♛ End of messages.yml ♛♛♛♛♛
+  #This is the default messages file.

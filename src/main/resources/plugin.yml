@@ -1,0 +1,10 @@
+name: ResourceRush
+version: '${version}'
+main: net.resolutemc.resourcerush.ResourceRush
+api-version: '1.21'
+commands:
+  ResourceRush:
+    permission: ResourceRush.Command
+    description: Main plugin command
+    aliases:
+      - rr

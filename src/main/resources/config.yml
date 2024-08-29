@@ -1,0 +1,61 @@
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+#                                                💻Resource Rush Config💻
+#                                                  🔥Coded By Mike3132🔥
+#                                                💻Resource Rush Config💻
+#                                                 🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥🖥
+
+Version: 'Version 1.0'
+ConfigVersion: '1.0'
+##### WARNING: DO NOT CHANGE ANYTHING ABOVE THIS LINE IT WILL BREAK THE PLUGIN!#####
+
+#✍✍✍✍✍Permissions✍✍✍✍✍
+#ResourceRush.Command.Reload -> Access to reload the plugins config files
+#ResourceRush.Command.Start -> Access to force start rushes
+#ResourceRush.Command.Stop -> Access to force stop rushes
+#✍✍✍✍✍Permissions✍✍✍✍✍
+
+#####You can Modify the following how you wish#####
+
+#The amount of time between rushes. (This is in minutes)
+Rush-Cooldown-Time: 60
+
+#The amount of time rushes will last. (This is in minutes)
+Rush-Time: 5
+
+#Should the plugin stop players from breaking player placed blocks during the rush?
+#If set to false they just won't get extra resources but the blocks will still be broken
+Player-Placed-Block-Protection: false
+
+#This is a whitelist of worlds that Resource Rushes happen in. Please use the world's name as a string
+World-Whitelist:
+  - "world"
+  - "world_nether"
+
+#How should the plugin notify players they have gotten extra resources during a rush?
+#You can have as many of these set to true as you wish, You can configure what the messages look like in the messages.yml
+Chat-Message: true
+Action-Bar-Message: true
+
+#Should the plugin put a boss bar on all online players when a rush starts?
+Rush-Boss-Bar: true
+
+#You can use these to change how the boss bar looks
+#This is what the boss bar will say
+Boss-Bar-Title: "&6Resource Rush is active in &2/warp resource &6Get 2x resources while this is active"
+#This is the color of the boss bar. (For colors please see https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarColor.html)
+Boss-Bar-Color: "YELLOW"
+#This is the style of the boss bar. (For styles please see https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarStyle.html)
+Boss-Bar-Style: "SOLID"
+
+#This is the amount that the plugin multiplies resources by
+#This is taken into account AFTER fortune and other plugins such as McMMO
+Multiply-Amount: 2
+
+
+#See messages.yml for all configurable plugin messages
+#♏ If you have any questions please join my discord, open a support ticket and @Mike3132
+#♏ https://discord.gg/ePQGvQuzG3
+#♏ Thanks for downloading and have a wonderful day
+
+#♛♛♛♛♛ END OF CONFIG ♛♛♛♛♛
+#This is the default config file.

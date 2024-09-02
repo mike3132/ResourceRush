@@ -1,6 +1,7 @@
 package net.resolutemc.resourcerush.commands;
 
 import net.resolutemc.resourcerush.ResourceRush;
+import net.resolutemc.resourcerush.configs.ConfigManager;
 import net.resolutemc.resourcerush.messages.ConsoleMessage;
 import net.resolutemc.resourcerush.messages.PlayerMessages;
 import org.bukkit.command.Command;
@@ -24,6 +25,7 @@ public class ResourceCommand implements CommandExecutor {
                 ConsoleMessage.sendConsoleMessageWithoutConfig(sender, "&4Stopping all rushes in preparation to reload config files");
                 ResourceRush.getInstance().getTimeUtils().disable();
                 ResourceRush.getInstance().reloadConfig();
+                ConfigManager.reloadAll();
                 ConsoleMessage.sendConsoleMessageWithoutConfig(sender, "&2config reloaded in " + (System.currentTimeMillis() - 1));
                 ConsoleMessage.sendConsoleMessageWithoutConfig(sender, "&6Starting new rushes with current config files");
                 ResourceRush.getInstance().getTimeUtils().startCheckTimer();

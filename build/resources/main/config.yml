@@ -17,10 +17,10 @@ ConfigVersion: '1.0'
 #####You can Modify the following how you wish#####
 
 #The amount of time between rushes. (This is in minutes)
-Rush-Cooldown-Time: .30
+Rush-Cooldown-Time: 60
 
 #The amount of time rushes will last. (This is in minutes)
-Rush-Time: 1
+Rush-Time: 5
 
 #Should the plugin stop players from breaking player placed blocks during the rush?
 #If set to false they just won't get extra resources but the blocks will still be broken
@@ -41,7 +41,7 @@ Rush-Boss-Bar: true
 
 #You can use these to change how the boss bar looks
 #This is what the boss bar will say
-Boss-Bar-Title: "&3Resource Rush is active in /warp resource, Get 2x resources while this is active"
+Boss-Bar-Title: "&6Resource Rush is active in &2/warp resource &6Get 2x resources while this is active"
 #This is the color of the boss bar. (For colors please see https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarColor.html)
 Boss-Bar-Color: "YELLOW"
 #This is the style of the boss bar. (For styles please see https://hub.spigotmc.org/javadocs/bukkit/org/bukkit/boss/BarStyle.html)

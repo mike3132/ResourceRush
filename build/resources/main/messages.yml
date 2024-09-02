@@ -30,6 +30,18 @@ Messages:
   Not-Enough-Args: "&4Error: &cYou have not supplied enough arguments for this command"
 
   #➳➳➳➳➳ Player Messages ➳➳➳➳➳
+  #Sent to all online players when a rush starts
+  Player-Rush-Started-Message: "&2Resource Rush has began"
+
+  #Sent to all online players when a rush stops
+  Player-Rush-Stopped-Message: "&4Rush has ended"
+
+  #Sent to the player if they use /ResourceRush and there is no active rushes
+  Player-No-Active-Rush-Message: "&3There is no active rushes going on, The next rush will happen in &d%ResourceRush_Cooldown% &3Minutes"
+
+  #Sent to the player if they use /ResourceRush and there is no active rushes
+  Player-Active-Rush-Message: "&2There is a rush going on, Anything you mine in /warp resource will be doubled"
+
   #Sent to the player when they mine a block that has been placed by a player during a rush
   #WARNING: This is only the message and if you would like for the block break to be stopped please set "Player-Placed-Block-Protection" to true in the config.yml
   Player-Placed-Block-Warning: "&4ERROR: &cThis is a player placed block, You will not get extra resources for mining this"
@@ -38,6 +50,16 @@ Messages:
   #Sent to the player when they mine a block and get extra resources during a rush
   Player-Extra-Resource-Chat-Message: "&2You have gotten extra resources for mining during a rush."
   Player-Extra-Resource-Action-Bar-Message: "&2You have gotten extra resources for mining during a rush."
+
+  #The following are messages that can be used in Placeholder API places such as scoreboards and player lists
+  #This is shown when there is a rush happening and will print the amount of time remaining in the rush
+  Rush-Active-Placeholder: "&3Rush is active and will remain for &d"
+
+  #This is shown between rushes and will print the remaining cooldown time
+  Rush-No-Active-Placeholder: "&2There is no active rush. The next rush is happening in &a"
+
+  #This is shown if there is no active resource tasks running, Such as when you use /ResourceRush stop or reload the config
+  Rush-Timer-Not-Active: "&4There is no active rush tasks running"
 
 
   #➳➳➳➳➳ Admin Messages ➳➳➳➳➳

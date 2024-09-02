@@ -2,9 +2,11 @@ name: ResourceRush
 version: '1.0'
 main: net.resolutemc.resourcerush.ResourceRush
 api-version: '1.21'
+softdepend:
+  - PlaceholderAPI
 commands:
   ResourceRush:
     permission: ResourceRush.Command
     description: Main plugin command
     aliases:
-      - rr
+      - rush

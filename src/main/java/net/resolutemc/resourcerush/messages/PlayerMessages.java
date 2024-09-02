@@ -22,6 +22,14 @@ public class PlayerMessages {
         player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
     }
 
+    public static void sendPlaceholderMessage(Player player, String key, String time) {
+        File messagesConfig = new File(ResourceRush.getInstance().getDataFolder(), "messages.yml");
+        YamlConfiguration configMessages = YamlConfiguration.loadConfiguration(messagesConfig);
+        String message = configMessages.getString("Messages.Prefix") + configMessages.getString("Messages." + key);
+        message = message.replace("%ResourceRush_Cooldown%", time);
+        player.sendMessage(ChatColor.translateAlternateColorCodes('&', message));
+    }
+
     public static void sendActionBarMessage(Player player, String key) {
         File messagesConfig = new File(ResourceRush.getInstance().getDataFolder(), "messages.yml");
         YamlConfiguration configMessages = YamlConfiguration.loadConfiguration(messagesConfig);

@@ -37,7 +37,7 @@ public class TimeUtils {
         this.checkTask = Bukkit.getScheduler().runTaskTimer(resourceRush, this::checkTime, 0, 20);
         // This is how long between rushes
         int coolDown = resourceRush.getConfig().getInt("Rush-Cooldown-Time");
-        this.checkTimer = System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(5);
+        this.checkTimer = System.currentTimeMillis() + TimeUnit.MINUTES.toMillis(coolDown);
         this.isTimerRunning = true;
     }
 
@@ -56,7 +56,7 @@ public class TimeUtils {
         this.isRushing = true;
         // This is how long a rush will last
         int duration = resourceRush.getConfig().getInt("Rush-Time");
-        this.rushTimer = System.currentTimeMillis() + TimeUnit.SECONDS.toMillis(10);
+        this.rushTimer = System.currentTimeMillis() + TimeUnit.MINUTES.toMillis(duration);
         this.rushTask = Bukkit.getScheduler().runTaskTimer(resourceRush, this::doRush, 0, 20);
     }
 
